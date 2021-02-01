@@ -1,4 +1,4 @@
-<h1 align="center">Hello, <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> I'm  M R Jeevan </h1>
+<h1 align="center">Hello, <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> I'm  Karthik S</h1>
 <h3 align="center">I love to work with latest technology, collaborate with others and contribute to open source projects</h3>
 
 
