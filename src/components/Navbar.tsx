@@ -35,8 +35,8 @@ const Navbar: React.FC = () => {
       scrolled ? "bg-background/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
     )}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <a href="#home" className="text-xl font-bold flex items-center">
-          <span className="text-primary">Karthik</span>
+        <a href="#home" className="text-xl font-bold flex items-center gap-2">
+          <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Karthik</span>
           <span className="text-secondary">S</span>
           <span className="ml-2 text-xs py-0.5 px-2 rounded-full bg-primary/10 text-primary">DevOps</span>
         </a>
