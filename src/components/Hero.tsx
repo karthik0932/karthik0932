@@ -19,13 +19,13 @@ const Hero: React.FC = () => {
           <div className="order-2 md:order-1 animate-fade-in">
             <p className="text-primary font-medium mb-2">Hi there, I'm</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 relative">
-              <span className="inline-block name-animation bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Karthik S</span>
+              <span className="inline-block name-animation bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">Karthik S</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground/80 mb-5">
               <span className="highlight">.NET Developer</span> & <span className="highlight">RPA Specialist</span>
             </h2>
             
-            <div className="relative overflow-hidden w-full py-3 mb-8 bg-background/50 rounded-md">
+            <div className="relative overflow-hidden w-full py-3 mb-8 bg-background/50 rounded-md shadow-sm">
               <div className="animate-marquee whitespace-nowrap">
                 <span className="inline-flex items-center text-lg text-primary font-medium mx-4">
                   <Code className="h-4 w-4 mr-2" /> Aspiring DevOps Engineer
@@ -128,7 +128,7 @@ const Hero: React.FC = () => {
                 <div className="devops-avatar-item" style={{ animationDelay: '3s' }}>
                   <Database className="h-6 w-6 text-white" />
                 </div>
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-6xl font-bold relative avatar-pulse">
+                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-6xl font-bold relative avatar-pulse">
                   <span className="tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">KS</span>
                 </div>
               </div>

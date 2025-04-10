@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -82,8 +82,8 @@
   body {
     @apply bg-background text-foreground transition-colors duration-300;
     background-image: 
-      radial-gradient(circle at 25px 25px, rgba(var(--primary), 0.05) 2%, transparent 0%),
-      radial-gradient(circle at 75px 75px, rgba(var(--primary), 0.05) 2%, transparent 0%);
+      radial-gradient(circle at 25px 25px, rgba(59, 130, 246, 0.05) 2%, transparent 0%),
+      radial-gradient(circle at 75px 75px, rgba(99, 102, 241, 0.07) 2%, transparent 0%);
     background-size: 100px 100px;
   }
 
@@ -125,7 +125,19 @@
   }
 
   .name-animation {
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: text-shimmer 3s ease-in-out infinite alternate;
+  }
+
+  .name-animation-nav {
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-shimmer 4s ease-in-out infinite alternate;
   }
 
   .avatar-pulse {
@@ -181,15 +193,15 @@
 @keyframes pulse {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 10px 0px rgba(var(--primary), 0.2);
+    box-shadow: 0 0 10px 0px rgba(59, 130, 246, 0.3);
   }
   50% {
     transform: scale(1.03);
-    box-shadow: 0 0 20px 10px rgba(var(--primary), 0.3);
+    box-shadow: 0 0 20px 10px rgba(59, 130, 246, 0.4);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 10px 0px rgba(var(--primary), 0.2);
+    box-shadow: 0 0 10px 0px rgba(59, 130, 246, 0.3);
   }
 }
 
