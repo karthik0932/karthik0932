@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -6,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 210 30% 96%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -81,8 +82,8 @@
   body {
     @apply bg-background text-foreground transition-colors duration-300;
     background-image: 
-      radial-gradient(circle at 25px 25px, rgba(59, 130, 246, 0.08) 2%, transparent 0%),
-      radial-gradient(circle at 75px 75px, rgba(99, 102, 241, 0.1) 2%, transparent 0%);
+      radial-gradient(circle at 25px 25px, rgba(59, 130, 246, 0.05) 2%, transparent 0%),
+      radial-gradient(circle at 75px 75px, rgba(99, 102, 241, 0.07) 2%, transparent 0%);
     background-size: 100px 100px;
   }
 
@@ -123,27 +124,6 @@
     @apply transition-all duration-300 hover:shadow-md hover:-translate-y-0.5;
   }
 
-  .typing-animation {
-    display: inline-block;
-    overflow: hidden;
-    border-right: 0.15em solid transparent;
-    white-space: nowrap;
-    position: relative;
-    animation: 
-      typing 3.5s steps(10, end) 1s 1 normal both,
-      blink-caret 0.75s step-end infinite;
-  }
-
-  .typing-animation.permanent {
-    animation: 
-      typing 3.5s steps(10, end) 1s 1 normal both,
-      text-shimmer 3s ease-in-out infinite alternate;
-  }
-  
-  .typing-animation.nav {
-    animation: text-shimmer 4s ease-in-out infinite alternate;
-  }
-
   .name-animation {
     background-size: 200% auto;
     background-clip: text;
@@ -162,7 +142,7 @@
 
   .avatar-pulse {
     animation: pulse 3s ease-in-out infinite;
-    box-shadow: 0 0 20px 5px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 20px 5px rgba(var(--primary), 0.3);
   }
 
   .devops-avatar-container {
@@ -190,16 +170,6 @@
   .devops-avatar-item:nth-child(4) {
     animation-delay: -7.5s;
   }
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgba(59, 130, 246, 0.75) }
 }
 
 @keyframes marquee {
