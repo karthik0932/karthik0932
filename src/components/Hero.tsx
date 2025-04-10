@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { ArrowDown, Github, Linkedin, Mail, Phone, Code, Database, Server, Cloud } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { 
@@ -12,17 +12,6 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/h
 import { cn } from '@/lib/utils';
 
 const Hero: React.FC = () => {
-  const [typingComplete, setTypingComplete] = useState(false);
-  
-  useEffect(() => {
-    // Set typing complete after the animation duration
-    const timer = setTimeout(() => {
-      setTypingComplete(true);
-    }, 4500); // Animation is 3.5s + 1s delay
-    
-    return () => clearTimeout(timer);
-  }, []);
-  
   return (
     <section id="home" className="pt-28 pb-20 md:pt-32 md:pb-28 min-h-screen flex flex-col justify-center">
       <div className="container mx-auto px-4">
@@ -30,10 +19,7 @@ const Hero: React.FC = () => {
           <div className="order-2 md:order-1 animate-fade-in">
             <p className="text-primary font-medium mb-2">Hi there, I'm</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 relative">
-              <span className={cn(
-                "inline-block bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500",
-                typingComplete ? "permanent typing-animation" : "typing-animation"
-              )}>Karthik S</span>
+              <span className="inline-block name-animation bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">Karthik S</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground/80 mb-5">
               <span className="highlight">.NET Developer</span> & <span className="highlight">RPA Specialist</span>
