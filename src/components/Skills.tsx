@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Code, Database, Server, FileCode, Briefcase } from 'lucide-react';
+import { Code, Database, Server, FileCode, Briefcase, Cloud, GitBranch, Terminal } from 'lucide-react';
 
 interface Skill {
   name: string;
@@ -58,6 +58,18 @@ const Skills: React.FC = () => {
       ]
     },
     {
+      name: "DevOps",
+      icon: <GitBranch className="h-5 w-5" />,
+      skills: [
+        { name: "CI/CD Pipelines", level: 70 },
+        { name: "Docker", level: 65 },
+        { name: "Git/GitHub", level: 80 },
+        { name: "Azure DevOps", level: 75 },
+        { name: "Infrastructure as Code", level: 65 },
+        { name: "Monitoring & Logging", level: 70 },
+      ]
+    },
+    {
       name: "Other",
       icon: <Briefcase className="h-5 w-5" />,
       skills: [
@@ -68,17 +80,17 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 bg-gradient-to-b from-background to-accent/10">
       <div className="container mx-auto px-4">
         <h2 className="section-title">
           <span className="highlight">Technical Skills</span>
         </h2>
         <p className="text-muted-foreground mb-12 max-w-2xl">
-          I've developed expertise in various technologies and tools throughout my career, with a focus on .NET development and automation.
+          I've developed expertise in various technologies and tools throughout my career, with a focus on .NET development, automation, and expanding into DevOps practices.
         </p>
 
         <Tabs defaultValue={skillCategories[0].name} className="w-full max-w-4xl mx-auto">
-          <TabsList className="grid grid-cols-2 md:grid-cols-5 mb-8">
+          <TabsList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 mb-8">
             {skillCategories.map((category) => (
               <TabsTrigger key={category.name} value={category.name} className="flex items-center gap-2 py-3">
                 {category.icon}
@@ -89,7 +101,7 @@ const Skills: React.FC = () => {
           
           {skillCategories.map((category) => (
             <TabsContent key={category.name} value={category.name} className="animate-fade-in">
-              <Card>
+              <Card className="border border-primary/10 shadow-lg">
                 <CardContent className="pt-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {category.skills.map((skill, index) => (
@@ -98,7 +110,7 @@ const Skills: React.FC = () => {
                           <h4 className="font-medium">{skill.name}</h4>
                           <span className="text-sm text-muted-foreground">{skill.level}%</span>
                         </div>
-                        <div className="skill-bar">
+                        <div className="skill-bar bg-primary/10">
                           <div 
                             className="skill-progress transition-all duration-1000" 
                             style={{ width: `${skill.level}%`, transitionDelay: `${index * 100}ms` }} 

@@ -35,8 +35,10 @@ const Navbar: React.FC = () => {
       scrolled ? "bg-background/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
     )}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <a href="#home" className="text-xl font-bold text-primary">
-          Karthik<span className="text-secondary">.</span>
+        <a href="#home" className="text-xl font-bold flex items-center">
+          <span className="text-primary">Karthik</span>
+          <span className="text-secondary">S</span>
+          <span className="ml-2 text-xs py-0.5 px-2 rounded-full bg-primary/10 text-primary">DevOps</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -46,9 +48,10 @@ const Navbar: React.FC = () => {
               <li key={link.name}>
                 <a 
                   href={link.href}
-                  className="text-foreground/80 hover:text-primary transition-colors duration-200"
+                  className="text-foreground/80 hover:text-primary transition-colors duration-200 relative group"
                 >
                   {link.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
             ))}
