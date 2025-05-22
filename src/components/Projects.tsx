@@ -12,6 +12,7 @@ export interface ProjectType {
   description: string;
   highlights: string[];
   technologies: string[];
+  image: string;
 }
 
 const Projects: React.FC = () => {
@@ -30,7 +31,8 @@ const Projects: React.FC = () => {
         "Designed a RESTful API for seamless communication between frontend and backend.",
         "Integrated SQL Server for data storage and retrieval."
       ],
-      technologies: ["ASP.NET Core", "Entity Framework", "SQL Server", "RESTful API", "Authentication"]
+      technologies: ["ASP.NET Core", "Entity Framework", "SQL Server", "RESTful API", "Authentication"],
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 2,
@@ -43,7 +45,8 @@ const Projects: React.FC = () => {
         "Sent email notifications for processed invoices.",
         "Reduced manual effort by 80% through automation."
       ],
-      technologies: ["Power Automate", "Excel", "SQL", "PDF Processing", "Email Automation"]
+      technologies: ["Power Automate", "Excel", "SQL", "PDF Processing", "Email Automation"],
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 3,
@@ -59,7 +62,8 @@ const Projects: React.FC = () => {
         "Processed payments automatically and logged missing data in a centralized log.",
         "Sent email notifications summarizing processed and missing records."
       ],
-      technologies: ["RPA", "Excel Automation", "Data Processing", "PDF Extraction", "Web Automation"]
+      technologies: ["RPA", "Excel Automation", "Data Processing", "PDF Extraction", "Web Automation"],
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
     }
   ];
 
@@ -84,7 +88,20 @@ const Projects: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <Card key={project.id} className="card-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card key={project.id} className="card-hover animate-fade-in overflow-hidden" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover object-center transition-transform hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                  <div className="p-4 text-white">
+                    <h3 className="text-lg font-bold">{project.title}</h3>
+                    <p className="text-sm text-white/80">{project.role}</p>
+                  </div>
+                </div>
+              </div>
               <CardHeader className="pb-2">
                 <CardTitle className="text-xl">{project.title}</CardTitle>
                 <CardDescription className="font-medium text-primary">

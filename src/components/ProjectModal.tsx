@@ -30,6 +30,14 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
         </DialogHeader>
         
         <div className="mt-4">
+          <div className="rounded-md overflow-hidden mb-6">
+            <img 
+              src={project.image} 
+              alt={project.title}
+              className="w-full h-auto object-cover"
+            />
+          </div>
+          
           <h3 className="text-lg font-semibold mb-2">Project Description</h3>
           <ul className="space-y-2">
             {project.highlights.map((highlight, index) => (
