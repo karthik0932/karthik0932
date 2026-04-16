@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+# 👋 Hi, I'm Karthik
 
-## Project info
+🚀 Aspiring DevOps Engineer | Backend Developer  
 
-**URL**: https://lovable.dev/projects/08f0a21d-e94d-45ff-9d2f-1d37fc39ea91
+---
 
-## How can I edit this code?
+## 💡 About Me
 
-There are several ways of editing your application.
+- Passionate about building and deploying scalable applications  
+- Hands-on experience with **Django, REST APIs, CI/CD, and Docker**  
+- Currently learning and improving skills in **DevOps & Cloud technologies**  
+- Focused on writing clean, efficient, and production-ready code  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/08f0a21d-e94d-45ff-9d2f-1d37fc39ea91) and start prompting.
+## ⚙️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+**Backend:**  
+Django, Django REST Framework  
 
-**Use your preferred IDE**
+**Frontend:**  
+React, TypeScript, Tailwind CSS  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**DevOps & Tools:**  
+GitHub Actions (CI/CD), Docker, Git  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🔗 Portfolio
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+👉 https://karthik0932.github.io/Portfolio/
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📌 What I’m Working On
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- Building full-stack applications  
+- Implementing CI/CD pipelines  
+- Containerizing applications using Docker  
+- Learning real-world deployment strategies  
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📫 Connect With Me
 
-**Use GitHub Codespaces**
+- GitHub: https://github.com/karthik0932  
+- Portfolio: https://karthik0932.github.io/Portfolio/
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/08f0a21d-e94d-45ff-9d2f-1d37fc39ea91) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+⭐ Always learning, building, and improving.
