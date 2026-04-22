@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Karthik
 
-🚀 Aspiring DevOps Engineer | Backend Developer  
+🚀 Aspiring DevOps Engineer | Full Stack Developer  
 
 ---
 
